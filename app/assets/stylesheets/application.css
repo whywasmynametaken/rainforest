@@ -13,3 +13,31 @@
  *= require_tree .
  *= require_self
  */
+body {
+  padding: em;
+/* background-image: url(leaf.jpg); */
+}
+
+.nav-bar {
+  padding: 8em;
+  background-image: url(leaf.jpg);
+  background-color: #203B58;
+}
+
+#search {
+  margin-left: 10em;
+  width: 50em;
+  height: 2em;
+}
+
+.nav-bar a {
+  color: white;
+}
+
+span.right {
+  margin-left: 16em;
+}
+
+span.cart {
+  float: right;
+}
