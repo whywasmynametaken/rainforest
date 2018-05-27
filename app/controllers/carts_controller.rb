@@ -4,7 +4,9 @@ class CartsController < ApplicationController
   # GET /carts
   # GET /carts.json
   def index
-    @carts = Cart.all
+    # @cart =  current_user.cart
+    # user has_one cart
+    @cart = Cart.first
   end
 
   # GET /carts/1

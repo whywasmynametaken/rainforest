@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Carts</h1>
+<h1>Cart</h1>
 
 <table>
   <thead>
@@ -10,11 +10,14 @@
   </thead>
 
   <tbody>
-    <% @carts.each do |cart| %>
+    <% @cart.cart_items.each do |item| %>
+    <% product = item.product %>
       <tr>
-        <td><%= link_to 'Show', cart %></td>
-        <td><%= link_to 'Edit', edit_cart_path(cart) %></td>
-        <td><%= link_to 'Destroy', cart, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= product.name %></td>
+        <td><%= product.description %></td>
+        <td>$<%= product.formatted_price %></td>
+        <td><%= link_to 'Show', product %></td>
+        <td><%= link_to 'Destroy', cart_item_path(item.id), method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -22,4 +25,4 @@
 
 <br>
 
-<%= link_to 'New Cart', new_cart_path %>
+<!-- <%= link_to 'New Cart', new_cart_path %> -->
