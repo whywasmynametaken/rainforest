@@ -1,3 +1,23 @@
+<div>
+  <div class="product-image">
+    <!-- ADD IMAGES HERE -->
+  </div>
+  <div class="product_info">
+    <p>
+      <strong>Name:</strong>
+      <%= @product.name %>
+    </p>
+    <p>
+      <strong>Description:</strong>
+      <%= @product.description %>
+    </p>
+    <p>
+      <strong>Price:</strong>
+      <%= @product.formatted_price %>
+    </p>
+  </div>
+</div>
+
 <h3>Reviews</h3>
 <% @product.reviews.each do |review| %>
   <p>
