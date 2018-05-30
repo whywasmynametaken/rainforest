@@ -65,9 +65,11 @@
 
             </div>
          </div>
-    <%= yield %>
+    <%= yield %>  
     <footer class="footer">
-               <span class="one">
+      <div class="container">
+        <div class="row">
+               <div class="col">
                 <ul>
                  <u><b><%=link_to "GET TO KNOW US", our_services_path %></b></u>
                  <li stile="color:white"><%=link_to "Careers", our_services_path %></li>
@@ -75,8 +77,8 @@
                  <li><%=link_to "Rainforest Devices", our_services_path %></li>
                  <li><%=link_to "About Rainforest", our_services_path %></li>
                </ul>
-               </span>
-               <span class="two">
+               </div>
+               <div class="col">
                 <ul>
                  <u><b><%=link_to"MAKE MONEY WITH US" %></b></u>
                  <li><%=link_to"Sell on Rainforest" %></li>
@@ -84,17 +86,17 @@
                  <li><%=link_to"Sell your Services on Rainforest" %></li>
                  <li><%=link_to"Advertise Your Products" %></li>
                </ul>
-               </span>
-               <span class="three">
+               </div>
+               <div class="col">
                 <ul>
-                 <u><b><%=link_to"RAINFOREST PAYMENT PRODUCTS" %></b></u>
+                 <u><b><%=link_to"PAYMENT PRODUCTS" %></b></u>
                  <li><%=link_to"Rainforest Rewards" %></li>
                  <li><%=link_to"Rainforest Corporate Credit Line" %></li>
                  <li><%=link_to"Shop with Points" %></li>
                  <li><%=link_to"Reload Your Balance" %></li>
                </ul>
-               </span>
-               <span class="four">
+               </div>
+               <div class="col">
                 <ul>
                  <u><b><%=link_to"LET US HELP YOU" %></b></u>
                  <li><%=link_to"Your Account" %></li>
@@ -102,7 +104,9 @@
                  <li><%=link_to"Shipping Rates and Policies" %></li>
                  <li><%=link_to"Help" %></li>
                </ul>
-             </span>
+             </div>
+           </div>
+           </div>
     </footer>
   </body>
 </html>
